@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meeting Minutes Formatting</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Surf Trip</h1>
+                    <h2>Meeting Teammates/Brainstorming</h2>
+                    <h3>October 3, 2021</h3>
+            </header>
+            <hr>
+
+            <nav>
+                <ul>
+                    <li><a href="#attend">Attendance</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                </ul>
+                
+            </nav>
+            <hr>
+
+            <div>
+                <h2 id="attend">Attendance List</h2>
+                <ul>
+                    <li><span><b>Alexander</b></span></li>
+                    <li><span><b>Sarah</b></span></li>
+                    <li><span><b>Josh</b></span></li>
+                    <li><span>Pria</span></li>
+                </ul>
+                <small><i>*Names in bold are in attendance.</i></small>
+            </div>
+            <hr>
+
+            <section>
+                <h2 id="agenda">Meeting Agenda</h2>
+                <ol>
+                    <li><strong>Ice Breakers</strong></li>
+                    <li>Picking a Leader</li>
+                    <li>Making Packing List</li>
+                    <li>Assign Roles</li>
+                    <li>Questions from Last Time?</li>
+                    <li>Dinner Social</li>
+                </ol>
+                <small><em>*Bolded items were just added to the agenda</em></small>
+
+                <h3>From Last Time</h3>
+                <ol>
+                    <li>Getting Surf Gear</li>
+                    <li>How to Pack Your Bag</li>
+                </ol>
+                <h3>Concerns About Logisitcs</h3>
+                <ul>
+                    <li>How many people can come to this trip?</li>
+                    <li>How much will this trip cost?</li>
+                </ul>
+                <h4>Diagram From Meeting</h4>
+                <img src="media/tripMap.jpg" width="200" height="250" alt="Map of trip route to Hawaii" />
+                <p>
+                    In this <strong>diagram</strong> we have <b>carefully</b> planned out the route
+                    that our trip will take. We <i>strongly</i> encourage all attending people to study this
+                    map carefully, as your knowledge of it will be tested before you can
+                    come on the trip. You may also want to visit this <a href="https://www.hawaii.com/">site</a> 
+                    before you leave!
+                </p>
+                <br>
+                <p>
+                    Additionally we have provided information on what the weather may be like below.
+                </p>
+                <audio controls>
+                    <source src="media/lightningVid.mp4" type="audio/mpeg">
+                    Audio Not supported
+                </audio>
+                <video controls width="200">
+                    <source src="media/lightningVid.mp4" type="video/mp4">
+                    Video not supported
+                </video>
+            </section>
+
+            <br>
+            <section>
+                <details>
+                    <summary>Overview!</summary>
+                    We learned about what to bring on the trip and how many people can attend.
+                    We hope to see you at the next meeting!
+                </details>
+                <hr>
+
+                <form>
+                    <div>
+                        <label for="name">What is your name?</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <br>
+                    <br>
+
+                    <fieldset>
+                        <legend>Choose your favorite beach</legend>
+
+                        <input type="radio" id="scripps">
+                        <label for="scripps">Scripps</label><br/>
+
+                        <input type="radio" id="blacks">
+                        <label for="blacks">Blacks</label><br/>
+
+                        <input type="radio" id="tourmaline">
+                        <label for="tourmaline">Tourmaline</label><br/>
+                    </fieldset>
+                    <br>
+                    <br>
+
+                    <textarea>When would you like to go!</textarea>
+                    <br>
+                    <br>
+
+                    <fieldset>
+                        <label for="types-of-board">Choose your board:</label>
+                        
+                        <input list="types-of-board"/>
+                        <datalist id="types-of-board">
+                            <option value="Swallow">
+                            <option value="Dolphin">
+                        </datalist>
+                    </fieldset>
+                    <br>
+                    <br>
+
+                    <fieldset>
+                        <label for="temp">What temp do you want?</label>
+                        <select name="temp" id="temp">
+                            <option>71 Degrees</option>
+                            <option>74 Degrees</option>
+                            <option>75 Degrees</option>
+                            <option>78 Degrees</option>
+                        </select>
+                    </fieldset>
+                    <br>
+                    <br>
+
+                    <fieldset>
+                        <legend>Which island would you like to go to?</legend>
+                        <input type="checkbox" id="kauai">
+                        <label for="kauai">Kauai</label>
+                        <input type="checkbox" id="oahu">
+                        <label for="oahu">Oahu</label>
+                        <input type="checkbox" id="maui">
+                        <label for="maui">Maui</label>
+                        <input type="checkbox" id="molokai">
+                        <label for="molokai">Molokai</label>
+                    </fieldset>
+                    <br>
+                    <br>
+
+                    <fieldset>
+                        <label for="leaving">When do you want to go?</label>
+                        <input type="date" id="leaving">
+                    </fieldset>
+                    <br>
+                    <br>
+
+
+
+                    <button type="submit">Time to leave!</button>
+
+                </form>
+            </section>
+            <br>
+
+            <hr>
+            <footer>
+                Nice Job Team!
+            </footer>
+        </main>
+        
+    </body>
+</html>
