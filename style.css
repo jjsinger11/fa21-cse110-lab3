@@ -1,0 +1,12 @@
+body {
+    background-color: aqua;
+    font-family: verdana;
+}
+h2, h3, h4 {
+    color: #3c11a0;
+    text-align: center;
+}
+h1{
+    color: rgb(223,111,161);
+    text-align: center;
+}
