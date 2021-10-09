@@ -1,6 +1,7 @@
 body {
     background-color: aqua;
     font-family: verdana;
+    margin: auto;
 }
 h2, h3, h4 {
     color: #3c11a0;
@@ -9,4 +10,27 @@ h2, h3, h4 {
 h1{
     color: rgb(223,111,161);
     text-align: center;
+}
+header {
+    margin-top: 25px;
+    margin-bottom: 10pt;
+    margin-left: 5pc;
+    margin-right: 4in;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-right: 11px;
+    padding-left: 5em;
+}
+p{
+    margin: 2em, 20ch, 30rem, 10vmin;
+    padding: 10rem, 10rem, 10rem, 10rem;
+}
+.media {
+    border-style: ridge;
+    border-color: orange;
+    border-radius: 20%;
+    border-width: .2in;
+    padding: 30px, 30px, 30px, 30px ;
+    margin-left: 20px;
+    margin-right: 20px;
 }
