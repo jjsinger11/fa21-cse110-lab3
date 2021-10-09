@@ -1,20 +1,23 @@
-body {
-    background-color: lightblue;
-    font-family: verdana;
+/* Define a font scheme */
+* {    
     font-family: 'Roboto Mono', monospace;
 }
+body {
+    background-color: lightblue;
+}
+/* Make all headers besides the first uniform */
 h2, h3, h4 {
     color: #3c11a0;
     text-align: center;
     border-style: outset;
     border-color: black;
-
 }
 h1{
     color: rgba(94, 176, 201, 0.87);
     text-align: center;
     position: sticky;
 }
+/* Adjust spacing of header to be slightly left */
 header {
     margin-top: 25px;
     margin-bottom: 10pt;
@@ -25,7 +28,8 @@ header {
     padding-right: 11px;
     padding-left: 5em;
 }
-p{
+/* Change the visiting hawaii paragraph to be left justified */
+p.info {
     margin: 2em, 20ch, 30rem, 10vmin;
     padding: 10rem, 10rem, 10rem, 10rem;
     display: block;
@@ -34,6 +38,54 @@ p{
     max-width: 60em;
     max-height: 10em;
 }
+/* Add Pseudo-classes */
+button:hover {
+    color: hsl(208, 94%, 72%);
+}
+a:active {
+    color: lightskyblue;
+}
+/* Attribute Selector */
+a[href="#attend"] {
+    color: pink;
+}
+#beach {
+    color: red;
+}
+/* Apply Flexbox Contents */
+fieldset {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 3;
+    align-self: center;
+}
+/* Space out the Agenda List */
+#list {
+    display: grid;
+    grid-template-rows: 30px 50px 30px 50px 30px;
+    grid-template-columns: auto;
+    row-gap: 20px;
+}
+/* Include a more responsive webpage */
+@media (min-aspect-ratio: 9/5) {
+    section {
+        background: rgb(67, 179, 169);
+    }
+}
+/* Practice with Combinators */
+section > ol {
+    text-align: left;
+}
+li + ol {
+    display: inline-block;
+}
+div fieldset {
+    margin-top: 10px;
+}
+p ~ section {
+    margin-left: 20px; 
+}
+/* Make border around videos and change margin */
 .media {
     border-style: ridge;
     border-color: rgb(111, 210, 223);
@@ -46,11 +98,4 @@ p{
     display: inline-block;
     position: relative;
     bottom: 50px;
-}
-button:hover {
-    color: hsl(208, 94%, 72%);
-}
-
-a:active {
-    color: lightskyblue;
 }
